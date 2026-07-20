@@ -27,6 +27,9 @@ public class 이어붙인수 {
         int ans = Solution.solution(new int[]{5, 7, 8, 3});
         System.out.println(ans);
 
+        int ans1 = Solution1.solution1(new int[]{5, 7, 8, 3});
+        System.out.println(ans1);
+
     }
 
     static class Solution{
@@ -47,6 +50,22 @@ public class 이어붙인수 {
             answer = evenNum + oddNum;
             
             return answer;
+        }
+    }
+
+    static class Solution1{
+
+        public static int solution1(int[] num_list) {
+            int answer = 0;
+            String even = "";
+            String odd = "";
+
+            for (int i : num_list) {
+                if(i%2 == 0) even+= i;
+                else odd+= i;
+            }
+
+            return Integer.parseInt(even) + Integer.parseInt(odd);
         }
     }
 }
