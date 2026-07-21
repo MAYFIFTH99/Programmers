@@ -1,4 +1,4 @@
-package com.problems;
+package com.think;
 
 /**
  * 문제 설명
@@ -22,6 +22,7 @@ package com.problems;
  */
 public class 문자열의앞의n글자 {
 
+    // my_string.length() - n 의 계산식이 뜻하는 바를 이미지화 할 수 있어야 함
     public static String solution(String my_string, int n) {
         return my_string.substring(-1, my_string.length() - n); // 뒤에서 n개를 잘라야 한다.
         /**
