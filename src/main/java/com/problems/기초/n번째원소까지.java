@@ -1,6 +1,4 @@
-package com.problems;
-
-import java.util.Arrays;
+package com.problems.기초;
 
 /**
  * 문제 설명
