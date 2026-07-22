@@ -32,23 +32,11 @@ public class 꼬리문자열 {
 
         public static String solution(String[] str_list, String ex) {
             String answer = "";
-            boolean[] flag = new boolean[str_list.length];
-
-            for (int i = 0, j=0; i < str_list.length; i++) {
-                if (str_list[i].contains(ex)) {
-                    flag[i] = true;
+            for (String str : str_list) {
+                if(!str.contains(ex)){
+                    answer += str;
                 }
             }
-
-            for (int i = 0; i < flag.length; i++) {
-                if (flag[i]) {
-                    continue;
-                }
-                else  {
-                    answer = answer + str_list[i];
-                }
-            }
-
             return answer;
         }
     }
